@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cosmos"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/astronaut" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="#70FFE83B"
+        android:text="Астронавт Нил Армстронг"
+        android:textAlignment="center"
+        android:textColor="#801224"
+        android:textSize="26sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_write_wish"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Написать мое пожелание астронавту"
+        app:cornerRadius="20dp" />
+
+    <EditText
+        android:id="@+id/et_my_wish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#7CBDDFFA"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pass_wish"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Послать мое пожелание астронавту"
+        android:visibility="invisible"
+        app:cornerRadius="20dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
